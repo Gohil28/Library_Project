@@ -1,0 +1,99 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #A8DADC;;
+}
+
+.container {
+  border-style: groove;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 0.1fr;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.books .card {
+  /* background-color: #FFFFFF; */
+  background-color: #457B9D;
+  color: black;
+  text-align: center;
+  height: 400px;
+  display: grid;
+  box-shadow: 5px 5px 5px #A8DADC;
+}
+
+h1 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.form-heading {
+  border-style: groove;
+  color: black;
+}
+
+.form {
+  border-style: groove;
+  color: black;
+}
+
+.books-heading {
+  border-style: groove;
+  color: black;
+}
+
+.books {
+  background-color: #F1FAEE;
+  border-style: groove;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-column: 2 / 3;
+  gap: 15px;
+  padding: 15px;
+}
+
+.add-book-button {
+  margin-top: 40px;
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: 5px 5px 5px black;
+}
+
+#add-book {
+  display: grid;
+  grid-template-columns: 0.1fr 1fr;
+  gap: 10px;
+  margin: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.submit-button,
+.reset-button {
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: 5px 5px 5px black;
+  grid-column: 1 / 3;
+}
+
+.submit-button {
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.remove-book-button {
+  grid-row: 5 / 6;
+  font-weight: 900;
+  background-color: red;
+  border-radius: 10px;
+}
+
+.read-status-button {
+  grid-row: 6 / 7;
+  font-weight: 900;
+  background-color: blue;
+  color: white;
+  border-radius: 10px;
+}
